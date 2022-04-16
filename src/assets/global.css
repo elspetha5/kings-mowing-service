@@ -1,0 +1,43 @@
+.footer {
+    background: url('https://ncs-frontend-assets.s3.us-east-2.amazonaws.com/-footer.svg') no-repeat top center;
+    background-size: cover;
+    width: 100%;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: #233355;
+}
+
+.footerLink:hover {
+    color: #526faf;
+}
+
+#navWordmark {
+    display: none;
+}
+
+#navLgLinks {
+    display: none;
+}
+
+@media (min-width: 24rem) {
+    #navLogo {
+        display: none
+    }
+    
+    #navWordmark {
+        display: initial;
+    }
+
+}
+
+@media (min-width: 50rem) {
+    #navSmLinks {
+        display: none;
+    }
+
+    #navLgLinks {
+        display: flex;
+    }
+}
