@@ -3,7 +3,7 @@ import React, { FunctionComponent } from 'react';
 const SchedulePage: FunctionComponent = () => {
     return (
         <div>
-            this is the landing page
+            this is the schedule page
         </div>
     )
 };
