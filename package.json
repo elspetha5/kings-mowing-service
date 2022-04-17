@@ -1,7 +1,7 @@
 {
   "name": "kings-mowing-service",
   "version": "0.1.0",
-  "homepage": "https://elspetha5.github.io/kings-mowing-service",
+  "homepage": "https://kingsmowingservice.com/",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
   "private": true,
