@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "88f464740c198f65e5e4",
+    "revision": "fd05d16204ea4ef67a93",
     "url": "/static/css/main.9a08ea23.chunk.css"
   },
   {
-    "revision": "88f464740c198f65e5e4",
-    "url": "/static/js/main.3368dc6b.chunk.js"
+    "revision": "fd05d16204ea4ef67a93",
+    "url": "/static/js/main.76b4fa29.chunk.js"
   },
   {
     "revision": "1408c664eeb8658afdc1",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/static/media/kings-mowing-icon.8af234c2.svg"
   },
   {
-    "revision": "24cca91c5f5bc9f9920ed3f08147fd5f",
+    "revision": "3663a11efe613a692f634783a3208689",
     "url": "/index.html"
   }
 ];
