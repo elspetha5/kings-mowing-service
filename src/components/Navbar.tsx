@@ -4,7 +4,6 @@ import { useLocation, Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar'
 import Grid from '@mui/material/Grid'
 import Paper from '@mui/material/Paper'
-import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import Menu from '@mui/icons-material/Menu';
 import Close from '@mui/icons-material/Close';
@@ -26,6 +25,10 @@ const navLinks = [
     {
         pathname: '/schedule',
         name: 'Schedule'
+    },
+    {
+        pathname: '/faqs',
+        name: 'FAQs'
     }
 ]
 
@@ -49,12 +52,12 @@ const Navbar: FunctionComponent = () => {
         >
             <Grid item xs={12}>
                 <Link to='/'>
-                    <img src={wordmark} alt='KMS Wordmark' id='navWordmark' style={{ width: '15vw', minWidth: '10rem' }} />
+                    <img src={wordmark} alt='KMS Wordmark' id='navWordmark' style={{ width: '10vw', minWidth: '8rem' }} />
                     <img src={icon} alt='KMS Logo' id='navLogo' style={{ width: '3rem' }} />
                 </Link>
             </Grid>
-            <Grid item xs={12} container style={{ display: 'flex', flexFlow: 'row', alignItems: 'center', justifyContent: 'flex-end' }} >
-                <Grid item xs={12} id='navLgLinks' style={{ justifyContent: 'flex-end' }}>
+            <Grid item xs={12} container sx={{ display: 'flex', flexFlow: 'row', alignItems: 'center', justifyContent: 'flex-end' }} >
+                <Grid item xs={12} id='navLgLinks' sx={{ justifyContent: 'flex-end' }}>
                     {navLinks.map(link => (
                         <Link
                             key={link.name}
@@ -72,12 +75,12 @@ const Navbar: FunctionComponent = () => {
                 </Grid>
 
                 <div id='navSmLinks'>
-                    <IconButton onClick={() => setIsMenuOpen(!isMenuOpen)} style={{ marginRight: '-12px' }}>
+                    <IconButton onClick={() => setIsMenuOpen(!isMenuOpen)} sx={{ marginRight: '-12px' }}>
                         {isMenuOpen ? <Close /> : <Menu />}
                     </IconButton>
                     {isMenuOpen &&
                         <Paper
-                            style={{
+                            sx={{
                                 position: 'absolute',
                                 top: '100%',
                                 right: '0',

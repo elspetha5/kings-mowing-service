@@ -1,15 +1,14 @@
-.footer {
-    background: url('https://ncs-frontend-assets.s3.us-east-2.amazonaws.com/-footer.svg') no-repeat top center;
-    background-size: cover;
+#landingFooter {
+    background: url('https://www.toptal.com/designers/subtlepatterns/uploads/leaves.png') repeat top center;
     width: 100%;
 }
 
-.footerLink {
+#footerLink {
     text-decoration: none;
-    color: #233355;
+    color: #272727;
 }
 
-.footerLink:hover {
+#footerLink:hover {
     color: #526faf;
 }
 
