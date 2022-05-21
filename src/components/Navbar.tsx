@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 // Material UI
 import AppBar from '@mui/material/AppBar'
@@ -35,6 +35,13 @@ const navLinks = [
 const Navbar: FunctionComponent = () => {
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            setIsMenuOpen(false);
+        };
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
 
     return (
         <AppBar

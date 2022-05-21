@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom';
 // Material UI Components
 import Grid from '@mui/material/Grid';
+import ThemeProvider from '@mui/material/styles/ThemeProvider';
+import createTheme from '@mui/material/styles/createTheme';
 // App Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,20 +17,33 @@ import SchedulePage from './pages/Schedule';
 import FAQPage from './pages/FAQs';
 import ContactUsPage from './pages/ContactUs';
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#38761d'
+    },
+    secondary: {
+      main: '#f1c232'
+    }
+  }
+});
+
 const App: FunctionComponent = () => {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Grid container sx={{ minHeight: '85vh' }}>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/payment" element={<PaymentPage />} />
-          <Route path="/schedule" element={<SchedulePage />} />
-          <Route path="/faqs" element={<FAQPage />} />
-          <Route path="/contact-us" element={<ContactUsPage />} />
-        </Routes>
-      </Grid>
-      <Footer />
+      <ThemeProvider theme={theme}>
+        <Navbar />
+        <Grid container sx={{ minHeight: '85vh' }}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/payment" element={<PaymentPage />} />
+            <Route path="/schedule" element={<SchedulePage />} />
+            <Route path="/faqs" element={<FAQPage />} />
+            <Route path="/contact-us" element={<ContactUsPage />} />
+          </Routes>
+        </Grid>
+        <Footer />
+      </ThemeProvider>
     </BrowserRouter>
   );
 }
