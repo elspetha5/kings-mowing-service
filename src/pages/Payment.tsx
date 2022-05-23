@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 // App components
 import mowing from '../images/mowing-card.jpg';
+import icon from '../images/kings-mowing-icon-white-outline.svg';
 
 const PaymentPage: FunctionComponent = () => {
     return (

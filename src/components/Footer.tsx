@@ -19,7 +19,7 @@ const Footer: FunctionComponent = () => {
                 <Typography sx={{ color: '#272727', margin: '0 .5rem' }}>|</Typography>
                 <Link to='/faqs' id='footerLink' component={RouterLink}>FAQs</Link>
             </Grid>
-            <Typography style={{ display: 'flex', alignItems: 'center', fontSize: '.75rem', marginTop: '2rem' }}><CopyrightIcon style={{ fontSize: '.75rem' }} /> Copyright {new Date().getFullYear()} Kings MowingService. All rights reserved.</Typography>
+            <Typography style={{ display: 'flex', alignItems: 'center', fontSize: '.75rem', marginTop: '2rem' }}><CopyrightIcon style={{ fontSize: '.75rem' }} /> Copyright {new Date().getFullYear()} Kings Mowing Service. All rights reserved.</Typography>
         </Grid>
     )
 };

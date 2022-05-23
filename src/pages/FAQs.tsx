@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 // Material UI
 import Grid from '@mui/material/Grid';
 import Accordion from '@mui/material/Accordion';
@@ -6,6 +7,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Link from '@mui/material/Link';
 // App components
 import Divider from '../components/Divider';
 
@@ -57,7 +59,7 @@ const FAQPage: FunctionComponent = () => {
                     <Typography>How do I schedule my mowing service?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography sx={{ color: '#949494' }}>Click on our schedule link and input your date preferences. We'll reach out to you a few days in advance to let you know when we plan to mow your lawn.</Typography>
+                    <Typography sx={{ color: '#949494' }}>Click on our <Link to='/schedule' component={RouterLink}>schedule</Link> link and input your date preferences. We'll reach out to you by email a few days in advance to let you know when we plan to mow your lawn.</Typography>
                 </AccordionDetails>
             </Accordion>
         </Grid>
