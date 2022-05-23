@@ -16,6 +16,7 @@ import PaymentPage from './pages/Payment';
 import SchedulePage from './pages/Schedule';
 import FAQPage from './pages/FAQs';
 import ContactUsPage from './pages/ContactUs';
+import './App.css';
 
 const theme = createTheme({
   palette: {
@@ -24,6 +25,17 @@ const theme = createTheme({
     },
     secondary: {
       main: '#f1c232'
+    },
+    info: {
+      main: '#cccccc'
+    }
+  },
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        fontFamily: "'Ubuntu', sans-serif",
+        color: '#272727'
+      }
     }
   }
 });

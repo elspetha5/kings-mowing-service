@@ -1,0 +1,12 @@
+.landingHeroImg {
+    background: url('./images/mowing-hero.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.landingHeroIcon {
+    width: 12rem;
+    position: absolute;
+    bottom: -10%;
+    left: calc(50% - 6rem);
+}
