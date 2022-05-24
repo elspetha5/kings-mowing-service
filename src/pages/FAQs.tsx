@@ -22,7 +22,7 @@ const FAQs: Array<OneFAQProps> = [
     },
     {
         summary: 'How do I schedule my mowing service?',
-        details: `Click on our ${<Link to='/schedule' component={RouterLink}>schedule</Link>} link and input your date preferences. We'll reach out to you by email a few days in advance to let you know when we plan to mow your lawn.`
+        details: 'SEE ONEFAQ COMPONENT BELOW'
     },
     {
         summary: 'What is included with my subscription?',
@@ -49,7 +49,10 @@ const OneFAQ: FunctionComponent<OneFAQProps> = ({ summary, details }) => {
                 <Typography>{summary}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-                <Typography sx={{ color: '#949494' }}>{details}</Typography>
+                {summary.includes('schedule')
+                    ? <Typography sx={{ color: '#949494' }}>Click on our <Link to='/schedule' component={RouterLink}>schedule</Link> link and input your date preferences. We'll reach out to you by email a few days in advance to let you know when we plan to mow your lawn.</Typography>
+                    : <Typography sx={{ color: '#949494' }}>{details}</Typography>
+                }
             </AccordionDetails>
         </Accordion>
     )
