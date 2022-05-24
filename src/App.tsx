@@ -45,7 +45,7 @@ const App: FunctionComponent = () => {
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <Navbar />
-        <Grid container sx={{ minHeight: '85vh' }}>
+        <Grid container sx={{ minHeight: '85vh', paddingBottom: '3rem' }}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/payment" element={<PaymentPage />} />

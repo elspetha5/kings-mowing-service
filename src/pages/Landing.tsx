@@ -10,14 +10,15 @@ import Divider from '../components/Divider';
 
 const LandingPage: FunctionComponent = () => {
     return (
-        <Grid container sx={{ flexFlow: 'column', paddingBottom: '3rem' }}>
+        <Grid container sx={{ flexFlow: 'column' }}>
             <Grid item xs={12} sx={{ position: 'relative' }}>
                 <div className='landingHeroImg' style={{ height: '30rem' }}></div>
                 <img src={icon} alt='KMS Icon' className='landingHeroIcon' />
             </Grid>
 
             <Grid item xs={12} sx={{ marginTop: '7rem', display: 'flex', flexFlow: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <Typography color='primary' sx={{ fontWeight: 'bold', fontSize: '1.5rem' }} >KING'S MOWING SERVICE</Typography>
+                <Typography color='primary' sx={{ fontWeight: 'bold', fontSize: '1.75rem' }} >KING'S MOWING SERVICE</Typography>
+                <Typography color='secondary' sx={{ width: '70vw', maxWidth: '30rem', textAlign: 'center', fontStyle: 'italic', fontSize: '1.25rem' }}>We give your lawn the royal treatment!</Typography>
                 <Divider />
                 <Typography sx={{ width: '70vw', maxWidth: '30rem', textAlign: 'center' }}>We are the Valley's only unlimited monthly flat-rate mowing service. The company was started by the dynamic father-son duo of Jeremy and Graham King. We live in Mesa with our family. We love to work hard and serve others and are excited to help you take care of your lawn as often as you need us!</Typography>
             </Grid>
@@ -29,7 +30,7 @@ const LandingPage: FunctionComponent = () => {
                     <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Unlimited mowing services</Typography>
                     <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Flat monthly rate</Typography>
                     <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Simple online payment</Typography>
-                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Local Family business</Typography>
+                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Local family business</Typography>
                     <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Schedule from your phone</Typography>
                 </Grid>
             </Grid>
