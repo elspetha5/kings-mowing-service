@@ -1,27 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "0beb8d1579d0250a36b4",
+    "revision": "1bcc821f7965f519a3c0",
     "url": "/static/css/main.8818aa09.chunk.css"
   },
   {
-    "revision": "0beb8d1579d0250a36b4",
-    "url": "/static/js/main.f6704e05.chunk.js"
+    "revision": "1bcc821f7965f519a3c0",
+    "url": "/static/js/main.e29f2ec7.chunk.js"
   },
   {
-    "revision": "16351b4b4c974967e7e6",
-    "url": "/static/js/runtime~main.4bad8518.js"
+    "revision": "3d20a748558d0db37ed4",
+    "url": "/static/js/runtime~main.1c8df25c.js"
   },
   {
-    "revision": "d524ab7851ea6415af5c",
-    "url": "/static/js/2.2a6e1b62.chunk.js"
+    "revision": "fea07c0dbb8cb8a782e4",
+    "url": "/static/js/2.ce37cc9a.chunk.js"
   },
   {
-    "revision": "fdc7f6205acc1d7d8bf4",
-    "url": "/static/js/3.f66dac44.chunk.js"
+    "revision": "dcb3e8f18500eec914da",
+    "url": "/static/js/3.a57e1420.chunk.js"
   },
   {
     "revision": "72ad94d5754472218ba9557fd7246128",
     "url": "/static/media/kings-mowing-icon.72ad94d5.svg"
+  },
+  {
+    "revision": "da1e020bba49c95f18acf6200d6fefbe",
+    "url": "/static/media/tip-jar.da1e020b.jpg"
   },
   {
     "revision": "488aee24affd0bd379543d944ba3fbf0",
@@ -40,7 +44,7 @@ self.__precacheManifest = [
     "url": "/static/media/mowing-hero.79e93cfc.jpg"
   },
   {
-    "revision": "98086d9849a194fdba117c6f8d114ae5",
+    "revision": "111750617a7d107d77bbe433d40fdeac",
     "url": "/index.html"
   }
 ];
