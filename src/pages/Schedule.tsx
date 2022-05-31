@@ -7,7 +7,7 @@ import Divider from '../components/Divider';
 
 const SchedulePage: FunctionComponent = () => {
     return (
-        <Grid container sx={{ alignItems: 'center', flexFlow: 'column' }}>
+        <Grid container sx={{ justifyContent: 'center' }}>
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSff5oWcGzdKHkrj7IllEB--MbAf6GfnNa5e_4NGIr4QfMmjwQ/viewform?embedded=true" width="640" height="100%" frameBorder="0" marginHeight={0} marginWidth={0}>Loading…</iframe>
         </Grid>
     )

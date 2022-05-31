@@ -29,6 +29,10 @@ const navLinks = [
     {
         pathname: '/faqs',
         name: 'FAQs'
+    },
+    {
+        pathname: '/contact-us',
+        name: 'Contact Us'
     }
 ]
 
