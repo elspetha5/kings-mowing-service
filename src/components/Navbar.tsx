@@ -23,8 +23,8 @@ const navLinks = [
         name: 'Pay'
     },
     {
-        pathname: '/schedule',
-        name: 'Schedule'
+        pathname: '/sign-up',
+        name: 'Sign Up'
     },
     {
         pathname: '/faqs',

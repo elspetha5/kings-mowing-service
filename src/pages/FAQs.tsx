@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
 // Material UI
 import Grid from '@mui/material/Grid';
 import Accordion from '@mui/material/Accordion';
@@ -7,7 +6,6 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Link from '@mui/material/Link';
 // App components
 import Divider from '../components/Divider';
 
@@ -18,15 +16,19 @@ const FAQs: Array<OneFAQProps> = [
     },
     {
         summary: 'How does the flat monthly rate work?',
-        details: "You schedule your first mowing online and make your first monthly payment and then you're all set for unlimited mowing for the next 30 days!"
+        details: "You sign up online, we reach out to schedule you, and you make your first monthly payment and then you're all set for unlimited mowing for the next 30 days!"
     },
     {
         summary: 'How do I schedule my mowing service?',
-        details: 'SEE ONEFAQ COMPONENT BELOW'
+        details: 'We will reach out to you after sign-up to get you on our schedule.'
     },
     {
         summary: 'What is included with my subscription?',
         details: 'The work included in every service is: mowing, trimming (of grass area), and blowing off the area around where we mow to keep your walkways clear.'
+    },
+    {
+        summary: 'Do you offer services besides mowing?',
+        details: 'Yes! We also offer bush/tree trimming, tree removal, and general yard cleanup.'
     }
 ]
 
@@ -49,10 +51,7 @@ const OneFAQ: FunctionComponent<OneFAQProps> = ({ summary, details }) => {
                 <Typography>{summary}</Typography>
             </AccordionSummary>
             <AccordionDetails>
-                {summary.includes('schedule')
-                    ? <Typography sx={{ color: '#949494' }}>Click on our <Link to='/schedule' component={RouterLink}>schedule</Link> link and input your date preferences. We'll reach out to you by email a few days in advance to let you know when we plan to mow your lawn.</Typography>
-                    : <Typography sx={{ color: '#949494' }}>{details}</Typography>
-                }
+                <Typography sx={{ color: '#949494' }}>{details}</Typography>
             </AccordionDetails>
         </Accordion>
     )

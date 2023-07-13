@@ -49,7 +49,7 @@ const App: FunctionComponent = () => {
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/payment" element={<PaymentPage />} />
-            <Route path="/schedule" element={<SchedulePage />} />
+            <Route path="/sign-up" element={<SchedulePage />} />
             <Route path="/faqs" element={<FAQPage />} />
             <Route path="/contact-us" element={<ContactUsPage />} />
           </Routes>

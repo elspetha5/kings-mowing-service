@@ -31,18 +31,17 @@ const LandingPage: FunctionComponent = () => {
                     <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Flat monthly rate</Typography>
                     <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Simple online payment</Typography>
                     <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Local family business</Typography>
-                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Schedule from your phone</Typography>
                 </Grid>
             </Grid>
 
             <Grid item xs={12} sx={{ marginTop: '5rem', display: 'flex', flexFlow: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <Typography color='primary' sx={{ fontSize: '1.2rem' }} >HOW TO SCHEDULE US</Typography>
+                <Typography color='primary' sx={{ fontSize: '1.2rem' }} >SERVICES WE OFFER</Typography>
                 <Divider />
                 <Grid item xs={12}>
-                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Click the <Link to='/schedule' component={RouterLink}>schedule</Link> button</Typography>
-                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Fill in your date preferences</Typography>
-                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ We'll reach out by email to let you know what day we're planning to mow your lawn</Typography>
-                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Pay for your month ahead of time</Typography>
+                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Mowing</Typography>
+                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Bush/Tree Trimming</Typography>
+                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Tree Removal</Typography>
+                    <Typography sx={{ width: '60vw', maxWidth: '20rem', marginBottom: '1rem' }}>○ Yard Cleanup</Typography>
                 </Grid>
             </Grid>
         </Grid>
